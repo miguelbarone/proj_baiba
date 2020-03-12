@@ -112,10 +112,36 @@
                                     <action selector="loginButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Eeb-Iz-Xqa"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fYP-Ub-mJB">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fYP-Ub-mJB">
                                 <rect key="frame" x="68" y="273" width="240" height="45"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="E-MAIL OU SENHA NÃO INCORRETOS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iZy-QP-ZIy">
+                                        <rect key="frame" x="44" y="12" width="188" height="25"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="188" id="kWY-sR-GfG"/>
+                                            <constraint firstAttribute="height" constant="25" id="nGq-82-gmo"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="10"/>
+                                        <color key="textColor" red="0.73333333333333328" green="0.1803921568627451" blue="0.22352941176470587" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_alert" translatesAutoresizingMaskIntoConstraints="NO" id="E1H-YT-dK4">
+                                        <rect key="frame" x="8" y="8" width="23" height="29"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="23" id="8V7-xP-Emu"/>
+                                            <constraint firstAttribute="height" constant="29" id="vB5-6G-zy6"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
                                 <color key="backgroundColor" red="0.090196078431372548" green="0.090196078431372548" blue="0.090196078431372548" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="E1H-YT-dK4" firstAttribute="leading" secondItem="fYP-Ub-mJB" secondAttribute="leading" constant="8" id="0np-Ps-Qjv"/>
+                                    <constraint firstAttribute="bottom" secondItem="E1H-YT-dK4" secondAttribute="bottom" constant="8" id="76z-kM-J8d"/>
+                                    <constraint firstAttribute="width" constant="240" id="KVR-zm-WFJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="iZy-QP-ZIy" secondAttribute="trailing" constant="8" id="RS7-ej-6a4"/>
+                                    <constraint firstAttribute="bottom" secondItem="iZy-QP-ZIy" secondAttribute="bottom" constant="8" id="TG7-pA-buL"/>
+                                    <constraint firstAttribute="height" constant="45" id="fhu-sL-Kel"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="0.090196078431372548" green="0.090196078431372548" blue="0.090196078431372548" alpha="1" colorSpace="calibratedRGB"/>
@@ -126,9 +152,12 @@
                             <constraint firstItem="Vjf-uu-XeX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="49" id="3ED-Ry-Ip1"/>
                             <constraint firstItem="Y3b-gL-htB" firstAttribute="top" secondItem="nr3-K0-d2W" secondAttribute="bottom" constant="89" id="3d3-Jl-Ic9"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Vjf-uu-XeX" secondAttribute="trailing" constant="47" id="5TU-DL-Vuw"/>
+                            <constraint firstItem="fYP-Ub-mJB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="68" id="9XV-QB-b5Z"/>
                             <constraint firstItem="nr3-K0-d2W" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="116" id="Avx-rU-nhh"/>
                             <constraint firstItem="4qK-3M-ibj" firstAttribute="top" secondItem="Y3b-gL-htB" secondAttribute="bottom" constant="44" id="BHF-L8-gJU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fYP-Ub-mJB" secondAttribute="trailing" constant="67" id="BIv-tv-kun"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Sh4-8u-CAR" secondAttribute="trailing" constant="57" id="Bxn-vF-qCY"/>
+                            <constraint firstItem="Gqm-Ba-0NK" firstAttribute="top" secondItem="fYP-Ub-mJB" secondAttribute="bottom" constant="52" id="FsK-f1-HTW"/>
                             <constraint firstItem="Gqm-Ba-0NK" firstAttribute="top" secondItem="BaQ-ok-NUU" secondAttribute="bottom" constant="82" id="GbA-Z8-YPm"/>
                             <constraint firstItem="Vjf-uu-XeX" firstAttribute="top" secondItem="Gqm-Ba-0NK" secondAttribute="bottom" constant="26" id="IBh-3e-97U"/>
                             <constraint firstAttribute="trailing" secondItem="mcC-cF-OZj" secondAttribute="trailing" constant="-427" id="Ids-Cm-kkb"/>
@@ -164,6 +193,7 @@
     <resources>
         <image name="dartlocao" width="1600" height="1200"/>
         <image name="dartvava11" width="736" height="1472"/>
+        <image name="ic_alert" width="20.333333969116211" height="19"/>
         <image name="ic_visibility" width="24" height="24"/>
         <image name="img_logo_login" width="268.66665649414062" height="167.66667175292969"/>
     </resources>

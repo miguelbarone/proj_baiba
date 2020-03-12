@@ -64,7 +64,7 @@ class LoginViewController: UIViewController {
         loginButton.layer.borderColor = (UIColor(named: "yellowbutton")?.cgColor as! CGColor)
         loginButton.layer.cornerRadius = 21
         
-        
+        alertView.isHidden = true
         
         emailTextField.attributedPlaceholder = NSAttributedString(string:"E-MAIL", attributes: [NSAttributedString.Key.foregroundColor: UIColor(named: "placeholder")])
         passwordTextField.attributedPlaceholder = NSAttributedString(string:"SENHA", attributes: [NSAttributedString.Key.foregroundColor: UIColor(named: "placeholder")])
@@ -107,14 +107,18 @@ class LoginViewController: UIViewController {
     
     @IBAction func loginButton(_ sender: Any) {
         
-        if let email = emailTextField.text, let password = passwordTextField.text, !password.isEmpty, !email.isEmpty, password.count <= 7 {
+        if let email = emailTextField.text, let password = passwordTextField.text, !password.isEmpty, !email.isEmpty, password.count <= 8 {
             viewModel.goLogin(email: email, password: password)
         } else {
-            let alert = UIAlertController(title: "Campos incorretos!", message: "Preencha todos os campos, ou verifique se inseriu os dados corretos.", preferredStyle: .alert)
-
-                 alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
-
-                 self.present(alert, animated: true)
+            
+            alertView.isHidden = false
+//            let alert = UIAlertController(title: "Campos incorretos!", message: "Preencha todos os campos, ou verifique se inseriu os dados corretos.", preferredStyle: .alert)
+//
+//                 alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+//
+//                 self.present(alert, animated: true)
+            
+            
         }
         
     }
