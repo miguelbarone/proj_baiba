@@ -54,6 +54,7 @@ class LoginViewController: UIViewController {
         alertView.layer.shadowRadius = 7.0
         alertView.layer.shadowColor = UIColor.red.cgColor
         alertView.layer.shadowOffset = CGSize(width: 0.0, height: 1.0)
+        
         alertView.layer.shadowOpacity = 5.0
         alertView.layer.borderWidth = 2
         alertView.layer.borderColor = (UIColor(named: "alert")?.cgColor )
@@ -131,7 +132,7 @@ class LoginViewController: UIViewController {
     @IBAction func resetPasswordButton(_ sender: Any) {
         
         let vc = ResetPasswordViewController.instantiate(viewModel: ResetViewModel(usecase: ResetPasswordUseCase(resetRepository: ResetPasswordRepositoryImpl())))
-        vc.modalPresentationStyle = .fullScreen
+        vc.modalPresentationStyle = .popover
         self.present(vc, animated: true, completion: nil)
         
     }

@@ -13,6 +13,7 @@ import RxCocoa
 
 class ResetPasswordViewController: UIViewController {
     
+    @IBOutlet weak var viewLight: UIView!
     @IBOutlet weak var sendButton: UIButton!
     @IBOutlet weak var closeButton: UIButton!
     @IBOutlet weak var emailTextField: UITextField!
@@ -22,14 +23,29 @@ class ResetPasswordViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        close()
-      sendButton.layer.borderColor = (UIColor(named: "yellowbutton")?.cgColor as! CGColor)
+        
+        emailTextField.layer.borderWidth = 1.0
+        emailTextField.layer.borderColor = UIColor.gray.cgColor
+        emailTextField.layer.cornerRadius = 9
+        
+        viewLight.layer.masksToBounds = false
+        viewLight.layer.shadowRadius = 7.0
+        viewLight.layer.shadowColor = UIColor.red.cgColor
+        viewLight.layer.shadowOffset = CGSize(width: 0.0, height: 1.0)
+        
+        viewLight.layer.shadowOpacity = 5.0
+        viewLight.layer.borderWidth = 2
+        viewLight.layer.borderColor = (UIColor(named: "alert")?.cgColor )
+        viewLight.layer.cornerRadius = 5
+       
+        sendButton.layer.borderWidth = 1.0
+        sendButton.layer.borderColor = (UIColor(named: "yellowbutton")?.cgColor as! CGColor)
         sendButton.layer.cornerRadius = 21
         
-       emailTextField.attributedPlaceholder = NSAttributedString(string:"E-MAIL", attributes: [NSAttributedString.Key.foregroundColor: UIColor(named: "placeholder")])
-       emailTextField.layer.borderColor = (UIColor(named: "alert")?.cgColor )
-
+        emailTextField.attributedPlaceholder = NSAttributedString(string:"E-MAIL", attributes: [NSAttributedString.Key.foregroundColor: UIColor(named: "placeholder")])
+        
         bind()
+        close()
     }
     
     static func instantiate(viewModel: ResetViewModel) -> ResetPasswordViewController {
