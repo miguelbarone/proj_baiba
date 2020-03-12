@@ -15,12 +15,11 @@ class LoginService {
     func makeLogin(email: String, password: String) -> Single<Bool> {
         return Single.create { single in
             Auth.auth().signIn(withEmail: email, password: password, completion:{ user, error in
-   
-                if error != nil{
+                if error != nil {
                     single(.success(false))
                     print ("erro")
                     return
-                }else {
+                } else {
                     single(.success(true))
                     print("Usuário logado")
                     return

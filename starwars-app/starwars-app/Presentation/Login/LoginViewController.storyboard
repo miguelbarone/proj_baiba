@@ -16,6 +16,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" image="dartlocao" translatesAutoresizingMaskIntoConstraints="NO" id="mcC-cF-OZj">
+                                <rect key="frame" x="0.0" y="0.0" width="802" height="812"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="812" id="V3z-iy-eZD"/>
+                                    <constraint firstAttribute="width" constant="802" id="dYf-z0-Ycs"/>
+                                </constraints>
+                            </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_logo_login" translatesAutoresizingMaskIntoConstraints="NO" id="BaQ-ok-NUU">
                                 <rect key="frame" x="13" y="64" width="346" height="224"/>
                                 <constraints>
@@ -23,7 +30,7 @@
                                     <constraint firstAttribute="height" constant="224" id="fJI-2B-smP"/>
                                 </constraints>
                             </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Vjf-uu-XeX">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" background="dartvava11" translatesAutoresizingMaskIntoConstraints="NO" id="Vjf-uu-XeX">
                                 <rect key="frame" x="49" y="446" width="279" height="50"/>
                                 <color key="backgroundColor" red="0.12156862745098039" green="0.12156862745098039" blue="0.12156862745098039" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -42,7 +49,7 @@
                                 </constraints>
                                 <state key="normal" image="ic_visibility"/>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="E-mail" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Gqm-Ba-0NK">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="E-mail" textAlignment="natural" minimumFontSize="17" background="dartlocao" translatesAutoresizingMaskIntoConstraints="NO" id="Gqm-Ba-0NK">
                                 <rect key="frame" x="49" y="370" width="279" height="50"/>
                                 <color key="backgroundColor" red="0.12156862745098039" green="0.12156862745098039" blue="0.12156862745098039" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -93,7 +100,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y3b-gL-htB">
-                                <rect key="frame" x="105" y="666" width="166" height="44"/>
+                                <rect key="frame" x="106" y="666" width="165" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="Zbb-rK-6Eg"/>
                                     <constraint firstAttribute="width" constant="165" id="Zjh-ee-PTk"/>
@@ -124,12 +131,16 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Sh4-8u-CAR" secondAttribute="trailing" constant="57" id="Bxn-vF-qCY"/>
                             <constraint firstItem="Gqm-Ba-0NK" firstAttribute="top" secondItem="BaQ-ok-NUU" secondAttribute="bottom" constant="82" id="GbA-Z8-YPm"/>
                             <constraint firstItem="Vjf-uu-XeX" firstAttribute="top" secondItem="Gqm-Ba-0NK" secondAttribute="bottom" constant="26" id="IBh-3e-97U"/>
+                            <constraint firstAttribute="trailing" secondItem="mcC-cF-OZj" secondAttribute="trailing" constant="-427" id="Ids-Cm-kkb"/>
+                            <constraint firstAttribute="bottom" secondItem="mcC-cF-OZj" secondAttribute="bottom" id="JuR-6j-emP"/>
+                            <constraint firstItem="mcC-cF-OZj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Lf9-vu-NHg"/>
                             <constraint firstItem="Sh4-8u-CAR" firstAttribute="top" secondItem="Gqm-Ba-0NK" secondAttribute="bottom" constant="39" id="Uqx-wl-7hK"/>
+                            <constraint firstItem="mcC-cF-OZj" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="bKw-bQ-N2u"/>
                             <constraint firstItem="4qK-3M-ibj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="bjf-tM-mOM"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BaQ-ok-NUU" secondAttribute="trailing" constant="16" id="gCS-IQ-CWm"/>
-                            <constraint firstItem="Y3b-gL-htB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="105" id="hEn-rj-iLb"/>
                             <constraint firstItem="Gqm-Ba-0NK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="49" id="kWY-Tc-34k"/>
                             <constraint firstItem="4qK-3M-ibj" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="knF-N0-Ug3"/>
+                            <constraint firstItem="Y3b-gL-htB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="106" id="lPC-tW-T8u"/>
                             <constraint firstItem="BaQ-ok-NUU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="13" id="nqh-7v-jOn"/>
                             <constraint firstItem="nr3-K0-d2W" firstAttribute="top" secondItem="Vjf-uu-XeX" secondAttribute="bottom" constant="21" id="obE-lz-iVC"/>
                             <constraint firstItem="BaQ-ok-NUU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="sIT-Bb-fXo"/>
@@ -151,6 +162,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="dartlocao" width="1600" height="1200"/>
+        <image name="dartvava11" width="736" height="1472"/>
         <image name="ic_visibility" width="24" height="24"/>
         <image name="img_logo_login" width="268.66665649414062" height="167.66667175292969"/>
     </resources>

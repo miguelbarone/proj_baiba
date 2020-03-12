@@ -36,6 +36,7 @@ class LoginViewController: UIViewController {
         loginButton.layer.borderColor = myColor.cgColor
 
         loginButton.layer.borderWidth = 1.0
+        
        
         
         emailTextField.layer.masksToBounds = false
@@ -106,12 +107,19 @@ class LoginViewController: UIViewController {
     
     @IBAction func loginButton(_ sender: Any) {
         
-        if let email = emailTextField.text, let password = passwordTextField.text, !password.isEmpty, !email.isEmpty {
-            
-            self.viewModel.goLogin(email: email, password: password)
+        if let email = emailTextField.text, let password = passwordTextField.text, !password.isEmpty, !email.isEmpty, password.count <= 7 {
+            viewModel.goLogin(email: email, password: password)
+        } else {
+            let alert = UIAlertController(title: "Campos incorretos!", message: "Preencha todos os campos, ou verifique se inseriu os dados corretos.", preferredStyle: .alert)
+
+                 alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+
+                 self.present(alert, animated: true)
         }
         
     }
+
+    
     
     func bind() {
         
