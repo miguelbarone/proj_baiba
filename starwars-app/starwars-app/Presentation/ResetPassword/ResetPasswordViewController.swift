@@ -27,6 +27,8 @@ class ResetPasswordViewController: UIViewController {
         emailTextField.layer.borderWidth = 1.0
         emailTextField.layer.borderColor = UIColor.gray.cgColor
         emailTextField.layer.cornerRadius = 9
+        emailTextField.layer.masksToBounds = true
+        emailTextField.layer.cornerRadius = 12
         
         viewLight.layer.masksToBounds = false
         viewLight.layer.shadowRadius = 7.0

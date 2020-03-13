@@ -24,8 +24,14 @@ class LoginViewController: UIViewController {
     var dispose = DisposeBag()
     
     var iconClick = true
-
     
+    var style:UIStatusBarStyle = .lightContent
+    override var preferredStatusBarStyle: UIStatusBarStyle{
+        
+        return self.style
+    }
+    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -37,19 +43,21 @@ class LoginViewController: UIViewController {
 
         loginButton.layer.borderWidth = 1.0
         
-       
-        
         emailTextField.layer.masksToBounds = false
         emailTextField.layer.shadowRadius = 3.0
         emailTextField.layer.shadowColor = UIColor.black.cgColor
         emailTextField.layer.shadowOffset = CGSize(width: 0.0, height: 5.0)
         emailTextField.layer.shadowOpacity = 1.0
+        emailTextField.layer.masksToBounds = true
+        emailTextField.layer.cornerRadius = 12
         
         passwordTextField.layer.masksToBounds = false
         passwordTextField.layer.shadowRadius = 3.0
         passwordTextField.layer.shadowColor = UIColor.black.cgColor
         passwordTextField.layer.shadowOffset = CGSize(width: 0.0, height: 5.0)
         passwordTextField.layer.shadowOpacity = 1.0
+        passwordTextField.layer.masksToBounds = true
+        passwordTextField.layer.cornerRadius = 12
         
         alertView.layer.masksToBounds = false
         alertView.layer.shadowRadius = 7.0
