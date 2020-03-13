@@ -8,13 +8,46 @@
 
 /* Begin PBXBuildFile section */
 		2043194E531ABF3833E1256D /* Pods_starwars_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAFC9D12ACDF81637DE52825 /* Pods_starwars_app.framework */; };
-		6A3C3742241029E40019DB7F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6A3C3741241029E40019DB7F /* GoogleService-Info.plist */; };
+		5A0FFF3F241283FD0057B290 /* PeopleListViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A0FFF3E241283FD0057B290 /* PeopleListViewController.storyboard */; };
+		5A0FFF42241290440057B290 /* ChooseSideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0FFF41241290440057B290 /* ChooseSideViewController.swift */; };
+		5A0FFF44241290510057B290 /* ChooseSideViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0FFF43241290510057B290 /* ChooseSideViewModel.swift */; };
+		5A0FFF462412906A0057B290 /* ChooseSideViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A0FFF452412906A0057B290 /* ChooseSideViewController.storyboard */; };
+		5A0FFF48241296300057B290 /* ChooseSideDIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0FFF47241296300057B290 /* ChooseSideDIContainer.swift */; };
+		5A0FFF4E2412BDEC0057B290 /* PeopleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0FFF4C2412BDEC0057B290 /* PeopleTableViewCell.swift */; };
+		5A0FFF4F2412BDEC0057B290 /* PeopleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A0FFF4D2412BDEC0057B290 /* PeopleTableViewCell.xib */; };
+		5A7C5543241140AD00B96D5F /* MoyaService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7C5542241140AD00B96D5F /* MoyaService.swift */; };
+		5A7C55452411414700B96D5F /* PeopleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7C55442411414700B96D5F /* PeopleService.swift */; };
+		5A7C55472411420A00B96D5F /* PeopleListRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7C55462411420A00B96D5F /* PeopleListRepository.swift */; };
+		5A7C55492411428300B96D5F /* PeopleListRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7C55482411428300B96D5F /* PeopleListRepositoryImpl.swift */; };
+		5A7C554B241146E000B96D5F /* PeopleListUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7C554A241146E000B96D5F /* PeopleListUseCase.swift */; };
+		5A7C554F24115EFC00B96D5F /* PeopleListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7C554E24115EFC00B96D5F /* PeopleListViewController.swift */; };
+		5A7C555124115F0C00B96D5F /* PeopleListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7C555024115F0C00B96D5F /* PeopleListViewModel.swift */; };
+		5A7C5553241174FB00B96D5F /* PeopleListDIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7C5552241174FB00B96D5F /* PeopleListDIContainer.swift */; };
+		5F25AB982411419200F9ED08 /* SignUpService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F25AB972411419200F9ED08 /* SignUpService.swift */; };
+		5F25AB9A24115D8800F9ED08 /* SingUpRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F25AB9924115D8800F9ED08 /* SingUpRepository.swift */; };
+		5F25AB9C24115E2500F9ED08 /* SignUpRepositorImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F25AB9B24115E2500F9ED08 /* SignUpRepositorImpl.swift */; };
+		5F8C140F241161AF0089D1BB /* SingUpUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F8C140E241161AF0089D1BB /* SingUpUseCase.swift */; };
+		5FEE48F7241165C5004C6CF0 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FEE48F6241165C5004C6CF0 /* SignUpViewController.swift */; };
+		5FEE48F9241165D0004C6CF0 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FEE48F8241165D0004C6CF0 /* SignUpViewModel.swift */; };
+		5FEE48FB24116D9D004C6CF0 /* SignUpDIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FEE48FA24116D9D004C6CF0 /* SignUpDIContainer.swift */; };
+		6A366B8A24112ED500B86105 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A366B8924112ED500B86105 /* LoginViewController.swift */; };
+		6A366B8C2411317100B86105 /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A366B8B2411317100B86105 /* LoginService.swift */; };
+		6A366B8E2411358A00B86105 /* LoginRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A366B8D2411358A00B86105 /* LoginRepository.swift */; };
+		6A366B9024113AA200B86105 /* LoginRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A366B8F24113AA200B86105 /* LoginRepositoryImpl.swift */; };
+		6A366B9224113DD200B86105 /* LoginUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A366B9124113DD200B86105 /* LoginUseCase.swift */; };
+		6A366B962411416D00B86105 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A366B952411416D00B86105 /* LoginViewModel.swift */; };
+		6A366B982411652C00B86105 /* StarWarsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A366B972411652C00B86105 /* StarWarsViewController.swift */; };
+		781003992416A51000416237 /* PeopleDetailsDIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781003982416A51000416237 /* PeopleDetailsDIContainer.swift */; };
+		7817021624113D8B00CC9777 /* PeopleDetails.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7817021524113D8B00CC9777 /* PeopleDetails.storyboard */; };
+		7817021824113DC400CC9777 /* PeopleDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7817021724113DC400CC9777 /* PeopleDetailsViewController.swift */; };
+		7817021A24113DD500CC9777 /* PeopleDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7817021924113DD500CC9777 /* PeopleDetailsViewModel.swift */; };
+		7817021D2411409400CC9777 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7817021C2411409400CC9777 /* UIViewController.swift */; };
 		786EBCEC2410208900683FD6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786EBCEB2410208900683FD6 /* AppDelegate.swift */; };
-		786EBCEE2410208900683FD6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786EBCED2410208900683FD6 /* SceneDelegate.swift */; };
 		786EBCF02410208900683FD6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786EBCEF2410208900683FD6 /* ViewController.swift */; };
-		786EBCF32410208900683FD6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 786EBCF12410208900683FD6 /* Main.storyboard */; };
 		786EBCF52410208B00683FD6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 786EBCF42410208B00683FD6 /* Assets.xcassets */; };
 		786EBCF82410208B00683FD6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 786EBCF62410208B00683FD6 /* LaunchScreen.storyboard */; };
+		78ADAE0724128F78008D5589 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 78ADAE0624128F78008D5589 /* GoogleService-Info.plist */; };
+		78ADAE0C2412C5BA008D5589 /* LoginViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78ADAE0B2412C5BA008D5589 /* LoginViewController.storyboard */; };
 		78D9E325241027F300C7C8B5 /* AppDIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D9E324241027F300C7C8B5 /* AppDIContainer.swift */; };
 		78D9E32924102B2000C7C8B5 /* BaseAPIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D9E32824102B2000C7C8B5 /* BaseAPIResponse.swift */; };
 		78D9E32B24102B3900C7C8B5 /* PeopleAPIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D9E32A24102B3900C7C8B5 /* PeopleAPIResponse.swift */; };
@@ -22,17 +55,50 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5A0FFF3E241283FD0057B290 /* PeopleListViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PeopleListViewController.storyboard; sourceTree = "<group>"; };
+		5A0FFF41241290440057B290 /* ChooseSideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseSideViewController.swift; sourceTree = "<group>"; };
+		5A0FFF43241290510057B290 /* ChooseSideViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseSideViewModel.swift; sourceTree = "<group>"; };
+		5A0FFF452412906A0057B290 /* ChooseSideViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ChooseSideViewController.storyboard; sourceTree = "<group>"; };
+		5A0FFF47241296300057B290 /* ChooseSideDIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseSideDIContainer.swift; sourceTree = "<group>"; };
+		5A0FFF4C2412BDEC0057B290 /* PeopleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleTableViewCell.swift; sourceTree = "<group>"; };
+		5A0FFF4D2412BDEC0057B290 /* PeopleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PeopleTableViewCell.xib; sourceTree = "<group>"; };
+		5A7C5542241140AD00B96D5F /* MoyaService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoyaService.swift; sourceTree = "<group>"; };
+		5A7C55442411414700B96D5F /* PeopleService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleService.swift; sourceTree = "<group>"; };
+		5A7C55462411420A00B96D5F /* PeopleListRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PeopleListRepository.swift; path = "starwars-app/Domain/Repositories/PeopleListRepository.swift"; sourceTree = SOURCE_ROOT; };
+		5A7C55482411428300B96D5F /* PeopleListRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PeopleListRepositoryImpl.swift; path = "starwars-app/Data/RepositoryImpl/PeopleListRepositoryImpl.swift"; sourceTree = SOURCE_ROOT; };
+		5A7C554A241146E000B96D5F /* PeopleListUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleListUseCase.swift; sourceTree = "<group>"; };
+		5A7C554E24115EFC00B96D5F /* PeopleListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleListViewController.swift; sourceTree = "<group>"; };
+		5A7C555024115F0C00B96D5F /* PeopleListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleListViewModel.swift; sourceTree = "<group>"; };
+		5A7C5552241174FB00B96D5F /* PeopleListDIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PeopleListDIContainer.swift; path = "starwars-app/Application/Scenes/PeopleListDIContainer.swift"; sourceTree = SOURCE_ROOT; };
+		5F25AB972411419200F9ED08 /* SignUpService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpService.swift; sourceTree = "<group>"; };
+		5F25AB9924115D8800F9ED08 /* SingUpRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SingUpRepository.swift; path = "starwars-app/Domain/Repositories/SingUpRepository.swift"; sourceTree = SOURCE_ROOT; };
+		5F25AB9B24115E2500F9ED08 /* SignUpRepositorImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SignUpRepositorImpl.swift; path = "starwars-app/Data/RepositoryImpl/SignUpRepositorImpl.swift"; sourceTree = SOURCE_ROOT; };
+		5F8C140E241161AF0089D1BB /* SingUpUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingUpUseCase.swift; sourceTree = "<group>"; };
+		5FB78ED4241298AE00893E56 /* teste.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = teste.swift; sourceTree = "<group>"; };
+		5FEE48F6241165C5004C6CF0 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SignUpViewController.swift; path = "starwars-app/Presentation/Register Feature/SignUpViewController.swift"; sourceTree = SOURCE_ROOT; };
+		5FEE48F8241165D0004C6CF0 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SignUpViewModel.swift; path = "starwars-app/Presentation/Register Feature/SignUpViewModel.swift"; sourceTree = SOURCE_ROOT; };
+		5FEE48FA24116D9D004C6CF0 /* SignUpDIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SignUpDIContainer.swift; path = "starwars-app/Data/RepositoryImpl/SignUpDIContainer.swift"; sourceTree = SOURCE_ROOT; };
 		6812943FCE8E56AFC21EDDA7 /* Pods-starwars-app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-starwars-app.debug.xcconfig"; path = "Target Support Files/Pods-starwars-app/Pods-starwars-app.debug.xcconfig"; sourceTree = "<group>"; };
-		6A3C3741241029E40019DB7F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
-		6A3C3743241033160019DB7F /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		6A366B8924112ED500B86105 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		6A366B8B2411317100B86105 /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginService.swift; path = "starwars-app/LoginService.swift"; sourceTree = SOURCE_ROOT; };
+		6A366B8D2411358A00B86105 /* LoginRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginRepository.swift; path = "starwars-app/LoginRepository.swift"; sourceTree = SOURCE_ROOT; };
+		6A366B8F24113AA200B86105 /* LoginRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginRepositoryImpl.swift; path = "starwars-app/LoginRepositoryImpl.swift"; sourceTree = SOURCE_ROOT; };
+		6A366B9124113DD200B86105 /* LoginUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginUseCase.swift; path = "starwars-app/LoginUseCase.swift"; sourceTree = SOURCE_ROOT; };
+		6A366B952411416D00B86105 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		6A366B972411652C00B86105 /* StarWarsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarsViewController.swift; sourceTree = "<group>"; };
+		781003982416A51000416237 /* PeopleDetailsDIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleDetailsDIContainer.swift; sourceTree = "<group>"; };
+		7817021524113D8B00CC9777 /* PeopleDetails.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PeopleDetails.storyboard; sourceTree = "<group>"; };
+		7817021724113DC400CC9777 /* PeopleDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleDetailsViewController.swift; sourceTree = "<group>"; };
+		7817021924113DD500CC9777 /* PeopleDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleDetailsViewModel.swift; sourceTree = "<group>"; };
+		7817021C2411409400CC9777 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		786EBCE82410208900683FD6 /* starwars-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "starwars-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		786EBCEB2410208900683FD6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		786EBCED2410208900683FD6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		786EBCEF2410208900683FD6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		786EBCF22410208900683FD6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		786EBCF42410208B00683FD6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		786EBCF72410208B00683FD6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		786EBCF92410208B00683FD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		78ADAE0624128F78008D5589 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		78ADAE0B2412C5BA008D5589 /* LoginViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LoginViewController.storyboard; sourceTree = "<group>"; };
 		78D9E324241027F300C7C8B5 /* AppDIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDIContainer.swift; sourceTree = "<group>"; };
 		78D9E32824102B2000C7C8B5 /* BaseAPIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseAPIResponse.swift; sourceTree = "<group>"; };
 		78D9E32A24102B3900C7C8B5 /* PeopleAPIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleAPIResponse.swift; sourceTree = "<group>"; };
@@ -53,6 +119,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5A0FFF402412901E0057B290 /* ChooseSideScreen */ = {
+			isa = PBXGroup;
+			children = (
+				5A0FFF41241290440057B290 /* ChooseSideViewController.swift */,
+				5A0FFF452412906A0057B290 /* ChooseSideViewController.storyboard */,
+				5A0FFF43241290510057B290 /* ChooseSideViewModel.swift */,
+			);
+			path = ChooseSideScreen;
+			sourceTree = "<group>";
+		};
+		5A0FFF492412BDA10057B290 /* PeopleCell */ = {
+			isa = PBXGroup;
+			children = (
+				5A0FFF4C2412BDEC0057B290 /* PeopleTableViewCell.swift */,
+				5A0FFF4D2412BDEC0057B290 /* PeopleTableViewCell.xib */,
+			);
+			path = PeopleCell;
+			sourceTree = "<group>";
+		};
+		5A7C554C24115E0200B96D5F /* PeopleList */ = {
+			isa = PBXGroup;
+			children = (
+				5A0FFF492412BDA10057B290 /* PeopleCell */,
+				5A7C554E24115EFC00B96D5F /* PeopleListViewController.swift */,
+				5A0FFF3E241283FD0057B290 /* PeopleListViewController.storyboard */,
+				5A7C555024115F0C00B96D5F /* PeopleListViewModel.swift */,
+			);
+			path = PeopleList;
+			sourceTree = "<group>";
+		};
 		624CE990791E94347E5F5A31 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -60,6 +156,24 @@
 				E6264D162DFA5B971ACAC3F8 /* Pods-starwars-app.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		6A366B932411414A00B86105 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6A366B972411652C00B86105 /* StarWarsViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		6A366B942411415300B86105 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				6A366B952411416D00B86105 /* LoginViewModel.swift */,
+				78ADAE0B2412C5BA008D5589 /* LoginViewController.storyboard */,
+				6A366B8924112ED500B86105 /* LoginViewController.swift */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 		707D07BC02AC2E1134608CEB /* Frameworks */ = {
@@ -70,6 +184,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		7817021B2411408300CC9777 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				7817021C2411409400CC9777 /* UIViewController.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
 		786EBCDF2410208900683FD6 = {
 			isa = PBXGroup;
 			children = (
@@ -77,6 +199,7 @@
 				786EBCE92410208900683FD6 /* Products */,
 				624CE990791E94347E5F5A31 /* Pods */,
 				707D07BC02AC2E1134608CEB /* Frameworks */,
+				78ADAE0A2412C4EB008D5589 /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,8 +220,6 @@
 				788E4CDA241022FE00B7551C /* Data */,
 				788E4CDC2410231900B7551C /* Infrastructure */,
 				786EBCEF2410208900683FD6 /* ViewController.swift */,
-				786EBCF12410208900683FD6 /* Main.storyboard */,
-				6A3C3741241029E40019DB7F /* GoogleService-Info.plist */,
 				788E4CD62410216E00B7551C /* Resources */,
 			);
 			path = "starwars-app";
@@ -107,12 +228,12 @@
 		788E4CD62410216E00B7551C /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				7817021B2411408300CC9777 /* Extensions */,
 				786EBCEB2410208900683FD6 /* AppDelegate.swift */,
-				786EBCED2410208900683FD6 /* SceneDelegate.swift */,
+				78ADAE0624128F78008D5589 /* GoogleService-Info.plist */,
 				786EBCF42410208B00683FD6 /* Assets.xcassets */,
 				786EBCF62410208B00683FD6 /* LaunchScreen.storyboard */,
 				786EBCF92410208B00683FD6 /* Info.plist */,
-				6A3C3743241033160019DB7F /* GoogleService-Info.plist */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -156,6 +277,11 @@
 		788E4CDD2410232600B7551C /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				6A366B942411415300B86105 /* Login */,
+				6A366B932411414A00B86105 /* Controllers */,
+				5A0FFF402412901E0057B290 /* ChooseSideScreen */,
+				5A7C554C24115E0200B96D5F /* PeopleList */,
+				78D9E32E2410301700C7C8B5 /* PeopleDetails */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -163,6 +289,10 @@
 		788E4CDE2410235500B7551C /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				5FEE48FA24116D9D004C6CF0 /* SignUpDIContainer.swift */,
+				5A7C5552241174FB00B96D5F /* PeopleListDIContainer.swift */,
+				5A0FFF47241296300057B290 /* ChooseSideDIContainer.swift */,
+				781003982416A51000416237 /* PeopleDetailsDIContainer.swift */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -186,6 +316,9 @@
 		788E4CE22410238600B7551C /* UseCase */ = {
 			isa = PBXGroup;
 			children = (
+				6A366B9124113DD200B86105 /* LoginUseCase.swift */,
+				5F8C140E241161AF0089D1BB /* SingUpUseCase.swift */,
+				5A7C554A241146E000B96D5F /* PeopleListUseCase.swift */,
 			);
 			path = UseCase;
 			sourceTree = "<group>";
@@ -193,6 +326,9 @@
 		788E4CE32410239000B7551C /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
+				6A366B8D2411358A00B86105 /* LoginRepository.swift */,
+				5F25AB9924115D8800F9ED08 /* SingUpRepository.swift */,
+				5A7C55462411420A00B96D5F /* PeopleListRepository.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -200,13 +336,30 @@
 		788E4CE4241023A100B7551C /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				6A366B8B2411317100B86105 /* LoginService.swift */,
+				5F25AB972411419200F9ED08 /* SignUpService.swift */,
+				5A7C5542241140AD00B96D5F /* MoyaService.swift */,
+				5A7C55442411414700B96D5F /* PeopleService.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		78ADAE0A2412C4EB008D5589 /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				5FB78ED4241298AE00893E56 /* teste.swift */,
+				5FEE48F6241165C5004C6CF0 /* SignUpViewController.swift */,
+				5FEE48F8241165D0004C6CF0 /* SignUpViewModel.swift */,
+			);
+			name = "Recovered References";
 			sourceTree = "<group>";
 		};
 		78D9E32624102A3E00C7C8B5 /* RepositoryImpl */ = {
 			isa = PBXGroup;
 			children = (
+				6A366B8F24113AA200B86105 /* LoginRepositoryImpl.swift */,
+				5F25AB9B24115E2500F9ED08 /* SignUpRepositorImpl.swift */,
+				5A7C55482411428300B96D5F /* PeopleListRepositoryImpl.swift */,
 			);
 			path = RepositoryImpl;
 			sourceTree = "<group>";
@@ -218,6 +371,16 @@
 				78D9E32A24102B3900C7C8B5 /* PeopleAPIResponse.swift */,
 			);
 			path = RemoteStorage;
+			sourceTree = "<group>";
+		};
+		78D9E32E2410301700C7C8B5 /* PeopleDetails */ = {
+			isa = PBXGroup;
+			children = (
+				7817021524113D8B00CC9777 /* PeopleDetails.storyboard */,
+				7817021724113DC400CC9777 /* PeopleDetailsViewController.swift */,
+				7817021924113DD500CC9777 /* PeopleDetailsViewModel.swift */,
+			);
+			path = PeopleDetails;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -281,9 +444,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				786EBCF82410208B00683FD6 /* LaunchScreen.storyboard in Resources */,
-				6A3C3742241029E40019DB7F /* GoogleService-Info.plist in Resources */,
 				786EBCF52410208B00683FD6 /* Assets.xcassets in Resources */,
-				786EBCF32410208900683FD6 /* Main.storyboard in Resources */,
+				78ADAE0C2412C5BA008D5589 /* LoginViewController.storyboard in Resources */,
+				78ADAE0724128F78008D5589 /* GoogleService-Info.plist in Resources */,
+				7817021624113D8B00CC9777 /* PeopleDetails.storyboard in Resources */,
+				5A0FFF4F2412BDEC0057B290 /* PeopleTableViewCell.xib in Resources */,
+				5A0FFF3F241283FD0057B290 /* PeopleListViewController.storyboard in Resources */,
+				5A0FFF462412906A0057B290 /* ChooseSideViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,27 +503,48 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A7C554F24115EFC00B96D5F /* PeopleListViewController.swift in Sources */,
 				78D9E32924102B2000C7C8B5 /* BaseAPIResponse.swift in Sources */,
+				5A0FFF4E2412BDEC0057B290 /* PeopleTableViewCell.swift in Sources */,
 				78D9E325241027F300C7C8B5 /* AppDIContainer.swift in Sources */,
+				7817021824113DC400CC9777 /* PeopleDetailsViewController.swift in Sources */,
+				5F25AB9A24115D8800F9ED08 /* SingUpRepository.swift in Sources */,
 				78D9E32B24102B3900C7C8B5 /* PeopleAPIResponse.swift in Sources */,
+				7817021D2411409400CC9777 /* UIViewController.swift in Sources */,
+				6A366B982411652C00B86105 /* StarWarsViewController.swift in Sources */,
+				5A7C555124115F0C00B96D5F /* PeopleListViewModel.swift in Sources */,
+				5A7C55492411428300B96D5F /* PeopleListRepositoryImpl.swift in Sources */,
+				5A0FFF48241296300057B290 /* ChooseSideDIContainer.swift in Sources */,
+				5A0FFF44241290510057B290 /* ChooseSideViewModel.swift in Sources */,
+				5A7C5543241140AD00B96D5F /* MoyaService.swift in Sources */,
 				786EBCF02410208900683FD6 /* ViewController.swift in Sources */,
+				6A366B9024113AA200B86105 /* LoginRepositoryImpl.swift in Sources */,
+				6A366B8C2411317100B86105 /* LoginService.swift in Sources */,
+				6A366B8E2411358A00B86105 /* LoginRepository.swift in Sources */,
+				6A366B8A24112ED500B86105 /* LoginViewController.swift in Sources */,
+				6A366B962411416D00B86105 /* LoginViewModel.swift in Sources */,
 				786EBCEC2410208900683FD6 /* AppDelegate.swift in Sources */,
-				786EBCEE2410208900683FD6 /* SceneDelegate.swift in Sources */,
+				7817021A24113DD500CC9777 /* PeopleDetailsViewModel.swift in Sources */,
 				78D9E32D24102B4800C7C8B5 /* People.swift in Sources */,
+				6A366B9224113DD200B86105 /* LoginUseCase.swift in Sources */,
+				781003992416A51000416237 /* PeopleDetailsDIContainer.swift in Sources */,
+				5F25AB9C24115E2500F9ED08 /* SignUpRepositorImpl.swift in Sources */,
+				5FEE48FB24116D9D004C6CF0 /* SignUpDIContainer.swift in Sources */,
+				5F25AB982411419200F9ED08 /* SignUpService.swift in Sources */,
+				5F8C140F241161AF0089D1BB /* SingUpUseCase.swift in Sources */,
+				5FEE48F7241165C5004C6CF0 /* SignUpViewController.swift in Sources */,
+				5FEE48F9241165D0004C6CF0 /* SignUpViewModel.swift in Sources */,
+				5A7C55472411420A00B96D5F /* PeopleListRepository.swift in Sources */,
+				5A7C554B241146E000B96D5F /* PeopleListUseCase.swift in Sources */,
+				5A0FFF42241290440057B290 /* ChooseSideViewController.swift in Sources */,
+				5A7C55452411414700B96D5F /* PeopleService.swift in Sources */,
+				5A7C5553241174FB00B96D5F /* PeopleListDIContainer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		786EBCF12410208900683FD6 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				786EBCF22410208900683FD6 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		786EBCF62410208B00683FD6 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

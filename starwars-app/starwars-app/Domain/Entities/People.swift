@@ -12,10 +12,10 @@ struct People: Codable {
     let name: String
     let height: String
     let mass: String
+    let faction: String
     let hair_color: String
     let skin_color: String
     let eye_color: String
     let birth_year: String
     let gender: String
-    let faction: String
 }

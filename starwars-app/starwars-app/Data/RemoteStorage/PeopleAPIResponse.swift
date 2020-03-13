@@ -8,11 +8,10 @@
 
 import Foundation
 
-import Foundation
-
 struct PeopleAPIReponse: Codable {
     let name: String
     let height: String
+    let faction: String
     let mass: String
     let hair_color: String
     let skin_color: String
@@ -21,5 +20,4 @@ struct PeopleAPIReponse: Codable {
     let gender: String
     let homeworld: String
     let films: [String]
-    let faction: String
 }
