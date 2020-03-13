@@ -151,7 +151,7 @@ class LoginViewController: UIViewController {
 }
 
 protocol LoginViewControllerDelegate {
-    func didTouchButtonLogin() -> UIViewController
+    func didTouchButtonLogin() -> ChooseSideViewController
 }
 
  
