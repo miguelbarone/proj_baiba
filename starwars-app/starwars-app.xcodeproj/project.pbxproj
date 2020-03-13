@@ -43,7 +43,6 @@
 		7817021A24113DD500CC9777 /* PeopleDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7817021924113DD500CC9777 /* PeopleDetailsViewModel.swift */; };
 		7817021D2411409400CC9777 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7817021C2411409400CC9777 /* UIViewController.swift */; };
 		786EBCEC2410208900683FD6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786EBCEB2410208900683FD6 /* AppDelegate.swift */; };
-		786EBCF02410208900683FD6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786EBCEF2410208900683FD6 /* ViewController.swift */; };
 		786EBCF52410208B00683FD6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 786EBCF42410208B00683FD6 /* Assets.xcassets */; };
 		786EBCF82410208B00683FD6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 786EBCF62410208B00683FD6 /* LaunchScreen.storyboard */; };
 		78ADAE0724128F78008D5589 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 78ADAE0624128F78008D5589 /* GoogleService-Info.plist */; };
@@ -93,7 +92,6 @@
 		7817021C2411409400CC9777 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		786EBCE82410208900683FD6 /* starwars-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "starwars-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		786EBCEB2410208900683FD6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		786EBCEF2410208900683FD6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		786EBCF42410208B00683FD6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		786EBCF72410208B00683FD6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		786EBCF92410208B00683FD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -219,7 +217,6 @@
 				788E4CDB2410230B00B7551C /* Domain */,
 				788E4CDA241022FE00B7551C /* Data */,
 				788E4CDC2410231900B7551C /* Infrastructure */,
-				786EBCEF2410208900683FD6 /* ViewController.swift */,
 				788E4CD62410216E00B7551C /* Resources */,
 			);
 			path = "starwars-app";
@@ -517,7 +514,6 @@
 				5A0FFF48241296300057B290 /* ChooseSideDIContainer.swift in Sources */,
 				5A0FFF44241290510057B290 /* ChooseSideViewModel.swift in Sources */,
 				5A7C5543241140AD00B96D5F /* MoyaService.swift in Sources */,
-				786EBCF02410208900683FD6 /* ViewController.swift in Sources */,
 				6A366B9024113AA200B86105 /* LoginRepositoryImpl.swift in Sources */,
 				6A366B8C2411317100B86105 /* LoginService.swift in Sources */,
 				6A366B8E2411358A00B86105 /* LoginRepository.swift in Sources */,
