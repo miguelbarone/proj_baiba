@@ -41,7 +41,7 @@ class ChooseSideViewController: UIViewController {
             self.navigationController?.pushViewController(vc, animated: true)
         }).disposed(by: disposeBag)
     }
-    
+     
     func shareImage() {
         let bounds = UIScreen.main.bounds
         UIGraphicsBeginImageContextWithOptions(bounds.size, true, 0.0)

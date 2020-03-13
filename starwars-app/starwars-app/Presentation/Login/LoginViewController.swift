@@ -129,10 +129,8 @@ class LoginViewController: UIViewController {
         
         self.viewModel.loginResponse.drive(onNext: { (login) in
             if login == true {
-                
                 let vc = self.delegate?.didTouchButtonLogin()
-                vc?.modalPresentationStyle = .fullScreen
-                self.present(vc!, animated: true, completion: nil)
+                self.navigationController?.pushViewController(vc!, animated: true)
             }else{
                 print("erro")
             }

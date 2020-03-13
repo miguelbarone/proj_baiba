@@ -23,7 +23,6 @@ class LoginDIContainer: LoginViewControllerDelegate {
         return makeChooseSideDI.makeChooseSideViewController()
     }
 
-    
 }
 
 
