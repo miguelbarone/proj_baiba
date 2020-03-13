@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Choose Side View Controller-->
+        <scene sceneID="oNf-Df-wdb">
+            <objects>
+                <viewController storyboardIdentifier="ChooseSideViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="K7M-s2-J7e" customClass="ChooseSideViewController" customModule="starwars_app" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JA8-I6-FAO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2kK-9K-uxk">
+                                <rect key="frame" x="94" y="433" width="30" height="30"/>
+                                <state key="normal" title="Luz"/>
+                                <connections>
+                                    <action selector="lightSideButton:" destination="K7M-s2-J7e" eventType="touchUpInside" id="4JL-rI-DcJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zXw-2F-byx">
+                                <rect key="frame" x="263" y="433" width="68" height="30"/>
+                                <state key="normal" title="Escuridão"/>
+                                <connections>
+                                    <action selector="darkSideButton:" destination="K7M-s2-J7e" eventType="touchUpInside" id="zyk-rb-NCU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VQJ-86-MJp">
+                                <rect key="frame" x="184" y="203" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="share:" destination="K7M-s2-J7e" eventType="touchUpInside" id="hZs-Ds-1Ix"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="2kK-9K-uxk" firstAttribute="leading" secondItem="7BO-3O-npm" secondAttribute="leading" constant="94" id="SAO-1d-Gae"/>
+                            <constraint firstItem="2kK-9K-uxk" firstAttribute="top" secondItem="7BO-3O-npm" secondAttribute="top" constant="389" id="U7y-BU-Tbs"/>
+                            <constraint firstItem="7BO-3O-npm" firstAttribute="trailing" secondItem="zXw-2F-byx" secondAttribute="trailing" constant="83" id="iVe-8i-dxP"/>
+                            <constraint firstItem="zXw-2F-byx" firstAttribute="top" secondItem="7BO-3O-npm" secondAttribute="top" constant="389" id="xNb-Wg-SwG"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="7BO-3O-npm"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iwx-AG-Bqa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="122" y="74"/>
+        </scene>
+    </scenes>
+</document>
