@@ -23,8 +23,7 @@ class LoginService {
                     single(.success(true))
                     print("Usuário logado")
                     return
-                }
-                
+                }  
             })
         return Disposables.create()
     }

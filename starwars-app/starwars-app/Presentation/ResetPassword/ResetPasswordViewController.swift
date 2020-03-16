@@ -62,7 +62,6 @@ class ResetPasswordViewController: UIViewController {
             self.viewModel.goReset(email: email)
             self.dismiss(animated: true, completion: nil)
         }
-      
     }
         func bind(){
             self.viewModel.resetResponse.drive(onNext: { (reset) in
@@ -73,8 +72,6 @@ class ResetPasswordViewController: UIViewController {
                 }
                 
             }).disposed(by: dispose)
-            
-            
     }
     
     func close() {

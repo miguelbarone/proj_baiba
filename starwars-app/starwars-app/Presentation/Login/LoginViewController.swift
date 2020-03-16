@@ -31,16 +31,16 @@ class LoginViewController: UIViewController {
         return self.style
     }
     
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         eyePasswordButton()
         bind()
-
+        
         let myColor = UIColor.white
         loginButton.layer.borderColor = myColor.cgColor
-
+        
         loginButton.layer.borderWidth = 1.0
         
         emailTextField.layer.masksToBounds = false
@@ -76,9 +76,7 @@ class LoginViewController: UIViewController {
         
         emailTextField.attributedPlaceholder = NSAttributedString(string:"E-MAIL", attributes: [NSAttributedString.Key.foregroundColor: UIColor(named: "placeholder")])
         passwordTextField.attributedPlaceholder = NSAttributedString(string:"SENHA", attributes: [NSAttributedString.Key.foregroundColor: UIColor(named: "placeholder")])
-//        passwordTextField.layer.shadowPath.
-         
-        
+        //        passwordTextField.layer.shadowPath.
 
     }
     
@@ -98,10 +96,7 @@ class LoginViewController: UIViewController {
             }
         }.disposed(by: dispose)
     }
-    
-    
-    
-    
+
     public class func create(delegate: LoginViewControllerDelegate, viewModel: LoginViewModel) -> LoginViewController {
         
         let storyboard = UIStoryboard(name: "LoginViewController", bundle: nil)
@@ -111,8 +106,7 @@ class LoginViewController: UIViewController {
         return view
         
     }
-    
-    
+
     @IBAction func loginButton(_ sender: Any) {
         
         if let email = emailTextField.text, let password = passwordTextField.text, !password.isEmpty, !email.isEmpty, password.count <= 8 {
@@ -120,19 +114,17 @@ class LoginViewController: UIViewController {
         } else {
             
             alertView.isHidden = false
-//            let alert = UIAlertController(title: "Campos incorretos!", message: "Preencha todos os campos, ou verifique se inseriu os dados corretos.", preferredStyle: .alert)
-//
-//                 alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
-//
-//                 self.present(alert, animated: true)
+            //            let alert = UIAlertController(title: "Campos incorretos!", message: "Preencha todos os campos, ou verifique se inseriu os dados corretos.", preferredStyle: .alert)
+            //
+            //                 alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+            //
+            //                 self.present(alert, animated: true)
             
             
         }
         
     }
 
-    
-    
     func bind() {
         
         self.viewModel.loginResponse.drive(onNext: { (login) in
@@ -160,5 +152,5 @@ protocol LoginViewControllerDelegate {
     func didTouchButtonLogin() -> ChooseSideViewController
 }
 
- 
+
 

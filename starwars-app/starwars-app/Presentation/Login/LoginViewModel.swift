@@ -28,8 +28,6 @@ public class LoginViewModel: LoginViewModelContract {
         usecase.goLogin(email: email, password: password).subscribe(onSuccess: { login in
             self.loginRelay.accept(login)
             }).disposed(by: disposeBag)
-        
-    
      }
     
     init(usecase: LoginUseCase) {
