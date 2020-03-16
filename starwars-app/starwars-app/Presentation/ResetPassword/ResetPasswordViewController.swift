@@ -51,8 +51,8 @@ class ResetPasswordViewController: UIViewController {
     }
     
     static func instantiate(viewModel: ResetViewModel) -> ResetPasswordViewController {
-        let storyboard = UIStoryboard(name: "ResetPasswordViewController", bundle: nil)
-        let view = storyboard.instantiateViewController(withIdentifier: "ResetPasswordViewController") as! ResetPasswordViewController
+        let storyboard = UIStoryboard.instantiate(name: .resetPassword, bundle: nil)
+        let view = storyboard.instantiateViewController(withIdentifier: ResetPasswordViewController.storyboardIdentifier) as! ResetPasswordViewController
         view.viewModel = viewModel
         return view
     }

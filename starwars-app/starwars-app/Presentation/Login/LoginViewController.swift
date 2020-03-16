@@ -99,8 +99,8 @@ class LoginViewController: UIViewController {
 
     public class func create(delegate: LoginViewControllerDelegate, viewModel: LoginViewModel) -> LoginViewController {
         
-        let storyboard = UIStoryboard(name: "LoginViewController", bundle: nil)
-        let view = storyboard.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
+        let storyboard = UIStoryboard.instantiate(name: .login, bundle: nil)
+        let view = storyboard.instantiateViewController(withIdentifier: LoginViewController.storyboardIdentifier) as! LoginViewController
         view.delegate = delegate
         view.viewModel = viewModel
         return view

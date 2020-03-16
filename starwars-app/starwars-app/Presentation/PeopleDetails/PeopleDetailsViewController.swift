@@ -9,12 +9,12 @@
 import UIKit
 
 class PeopleDetailsViewController: UIViewController {
-    @IBOutlet weak var nameLabel: UILabel! {
+    @IBOutlet private weak var nameLabel: UILabel! {
         didSet {
             self.nameLabel.text = self._viewModel?.name
         }
     }
-    @IBOutlet weak var factionLabel: UILabel! {
+    @IBOutlet private weak var factionLabel: UILabel! {
         didSet {
             self.factionLabel.text = self._viewModel?.faction
         }
@@ -27,10 +27,12 @@ class PeopleDetailsViewController: UIViewController {
     }
     
     static func instantiate(viewModel: PeopleDetailsViewModelContract) -> PeopleDetailsViewController? {
-        let sb = UIStoryboard(name: "PeopleDetails", bundle: Bundle(for: PeopleDetailsViewController.self))
+        let sb = UIStoryboard.instantiate(name: .peopleDetails, bundle: nil)
         guard let vc = sb.instantiateViewController(withIdentifier: PeopleDetailsViewController.storyboardIdentifier) as? PeopleDetailsViewController else { return nil }
         vc._viewModel = viewModel
         return vc
     }
 
 }
+ 
+

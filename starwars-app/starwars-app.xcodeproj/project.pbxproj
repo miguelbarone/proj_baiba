@@ -46,10 +46,12 @@
 		6A45841F24192F3B0043ABF2 /* LoginViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A45841E24192F3B0043ABF2 /* LoginViewController.storyboard */; };
 		6A4E2CD8241BBA2E001096E6 /* LoginDIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A4E2CD7241BBA2E001096E6 /* LoginDIContainer.swift */; };
 		781003992416A51000416237 /* PeopleDetailsDIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781003982416A51000416237 /* PeopleDetailsDIContainer.swift */; };
-		7817021624113D8B00CC9777 /* PeopleDetails.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7817021524113D8B00CC9777 /* PeopleDetails.storyboard */; };
+		7817021624113D8B00CC9777 /* PeopleDetailsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7817021524113D8B00CC9777 /* PeopleDetailsViewController.storyboard */; };
 		7817021824113DC400CC9777 /* PeopleDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7817021724113DC400CC9777 /* PeopleDetailsViewController.swift */; };
 		7817021A24113DD500CC9777 /* PeopleDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7817021924113DD500CC9777 /* PeopleDetailsViewModel.swift */; };
 		7817021D2411409400CC9777 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7817021C2411409400CC9777 /* UIViewController.swift */; };
+		781D61B9241FB79100F59A80 /* Storyboards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781D61B8241FB79100F59A80 /* Storyboards.swift */; };
+		781D61BB241FB94300F59A80 /* UIStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781D61BA241FB94300F59A80 /* UIStoryboard.swift */; };
 		786EBCEC2410208900683FD6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786EBCEB2410208900683FD6 /* AppDelegate.swift */; };
 		786EBCF52410208B00683FD6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 786EBCF42410208B00683FD6 /* Assets.xcassets */; };
 		786EBCF82410208B00683FD6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 786EBCF62410208B00683FD6 /* LaunchScreen.storyboard */; };
@@ -101,10 +103,12 @@
 		6A45841E24192F3B0043ABF2 /* LoginViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LoginViewController.storyboard; sourceTree = "<group>"; };
 		6A4E2CD7241BBA2E001096E6 /* LoginDIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginDIContainer.swift; sourceTree = "<group>"; };
 		781003982416A51000416237 /* PeopleDetailsDIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleDetailsDIContainer.swift; sourceTree = "<group>"; };
-		7817021524113D8B00CC9777 /* PeopleDetails.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PeopleDetails.storyboard; sourceTree = "<group>"; };
+		7817021524113D8B00CC9777 /* PeopleDetailsViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PeopleDetailsViewController.storyboard; sourceTree = "<group>"; };
 		7817021724113DC400CC9777 /* PeopleDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleDetailsViewController.swift; sourceTree = "<group>"; };
 		7817021924113DD500CC9777 /* PeopleDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleDetailsViewModel.swift; sourceTree = "<group>"; };
 		7817021C2411409400CC9777 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		781D61B8241FB79100F59A80 /* Storyboards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboards.swift; sourceTree = "<group>"; };
+		781D61BA241FB94300F59A80 /* UIStoryboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStoryboard.swift; sourceTree = "<group>"; };
 		786EBCE82410208900683FD6 /* starwars-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "starwars-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		786EBCEB2410208900683FD6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		786EBCF42410208B00683FD6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -135,8 +139,8 @@
 		5A0FFF402412901E0057B290 /* ChooseSideScreen */ = {
 			isa = PBXGroup;
 			children = (
-				5A0FFF41241290440057B290 /* ChooseSideViewController.swift */,
 				5A0FFF452412906A0057B290 /* ChooseSideViewController.storyboard */,
+				5A0FFF41241290440057B290 /* ChooseSideViewController.swift */,
 				5A0FFF43241290510057B290 /* ChooseSideViewModel.swift */,
 			);
 			path = ChooseSideScreen;
@@ -155,8 +159,8 @@
 			isa = PBXGroup;
 			children = (
 				5A0FFF492412BDA10057B290 /* PeopleCell */,
-				5A7C554E24115EFC00B96D5F /* PeopleListViewController.swift */,
 				5A0FFF3E241283FD0057B290 /* PeopleListViewController.storyboard */,
+				5A7C554E24115EFC00B96D5F /* PeopleListViewController.swift */,
 				5A7C555024115F0C00B96D5F /* PeopleListViewModel.swift */,
 			);
 			path = PeopleList;
@@ -174,8 +178,8 @@
 		6A3115842412B63E0029EEC9 /* ResetPassword */ = {
 			isa = PBXGroup;
 			children = (
-				6A3115822412B6370029EEC9 /* ResetPasswordViewController.swift */,
 				6A3115852412B6830029EEC9 /* ResetPasswordViewController.storyboard */,
+				6A3115822412B6370029EEC9 /* ResetPasswordViewController.swift */,
 				6A3115912412D8060029EEC9 /* ResetPasswordViewModel.swift */,
 			);
 			path = ResetPassword;
@@ -184,8 +188,8 @@
 		6A366B942411415300B86105 /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				6A366B8924112ED500B86105 /* LoginViewController.swift */,
 				6A45841E24192F3B0043ABF2 /* LoginViewController.storyboard */,
+				6A366B8924112ED500B86105 /* LoginViewController.swift */,
 				6A366B952411416D00B86105 /* LoginViewModel.swift */,
 			);
 			path = Login;
@@ -203,8 +207,17 @@
 			isa = PBXGroup;
 			children = (
 				7817021C2411409400CC9777 /* UIViewController.swift */,
+				781D61BA241FB94300F59A80 /* UIStoryboard.swift */,
 			);
 			name = Extensions;
+			sourceTree = "<group>";
+		};
+		781D61B7241FB78200F59A80 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				781D61B8241FB79100F59A80 /* Storyboards.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		786EBCDF2410208900683FD6 = {
@@ -229,6 +242,7 @@
 		786EBCEA2410208900683FD6 /* starwars-app */ = {
 			isa = PBXGroup;
 			children = (
+				781D61B7241FB78200F59A80 /* Utils */,
 				788E4CD9241022F500B7551C /* Application */,
 				788E4CDD2410232600B7551C /* Presentation */,
 				788E4CDB2410230B00B7551C /* Domain */,
@@ -396,7 +410,7 @@
 		78D9E32E2410301700C7C8B5 /* PeopleDetails */ = {
 			isa = PBXGroup;
 			children = (
-				7817021524113D8B00CC9777 /* PeopleDetails.storyboard */,
+				7817021524113D8B00CC9777 /* PeopleDetailsViewController.storyboard */,
 				7817021724113DC400CC9777 /* PeopleDetailsViewController.swift */,
 				7817021924113DD500CC9777 /* PeopleDetailsViewModel.swift */,
 			);
@@ -466,8 +480,9 @@
 				786EBCF82410208B00683FD6 /* LaunchScreen.storyboard in Resources */,
 				786EBCF52410208B00683FD6 /* Assets.xcassets in Resources */,
 				78ADAE0724128F78008D5589 /* GoogleService-Info.plist in Resources */,
-				7817021624113D8B00CC9777 /* PeopleDetails.storyboard in Resources */,
+				7817021624113D8B00CC9777 /* PeopleDetailsViewController.storyboard in Resources */,
 				6A3115862412B6830029EEC9 /* ResetPasswordViewController.storyboard in Resources */,
+				7817021624113D8B00CC9777 /* PeopleDetailsViewController.storyboard in Resources */,
 				5A0FFF4F2412BDEC0057B290 /* PeopleTableViewCell.xib in Resources */,
 				6A45841F24192F3B0043ABF2 /* LoginViewController.storyboard in Resources */,
 				5A0FFF3F241283FD0057B290 /* PeopleListViewController.storyboard in Resources */,
@@ -554,9 +569,11 @@
 				78D9E32D24102B4800C7C8B5 /* People.swift in Sources */,
 				6A366B9224113DD200B86105 /* LoginUseCase.swift in Sources */,
 				781003992416A51000416237 /* PeopleDetailsDIContainer.swift in Sources */,
+				781D61B9241FB79100F59A80 /* Storyboards.swift in Sources */,
 				5F25AB9C24115E2500F9ED08 /* SignUpRepositorImpl.swift in Sources */,
 				5FEE48FB24116D9D004C6CF0 /* SignUpDIContainer.swift in Sources */,
 				5F25AB982411419200F9ED08 /* SignUpService.swift in Sources */,
+				781D61BB241FB94300F59A80 /* UIStoryboard.swift in Sources */,
 				5F8C140F241161AF0089D1BB /* SingUpUseCase.swift in Sources */,
 				5FEE48F7241165C5004C6CF0 /* SignUpViewController.swift in Sources */,
 				5FEE48F9241165D0004C6CF0 /* SignUpViewModel.swift in Sources */,

@@ -18,8 +18,8 @@ class ChooseSideViewController: UIViewController {
     var disposeBag = DisposeBag()
     
     public class func instantiate(viewModel: ChooseSideViewModel, routes: ChooseDIContainerProtocol) -> ChooseSideViewController {
-        let storyboard = UIStoryboard(name: "ChooseSideViewController", bundle: nil)
-        let view = storyboard.instantiateViewController(withIdentifier: "ChooseSideViewController") as! ChooseSideViewController
+        let storyboard = UIStoryboard.instantiate(name: .chooseSide, bundle: nil)
+        let view = storyboard.instantiateViewController(withIdentifier: ChooseSideViewController.storyboardIdentifier) as! ChooseSideViewController
         view.viewModel = viewModel
         view.routes = routes
         return view

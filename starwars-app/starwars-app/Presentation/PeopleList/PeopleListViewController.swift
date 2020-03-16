@@ -19,8 +19,8 @@ class PeopleListViewController: UIViewController {
     var disposeBag = DisposeBag()
     
     public class func instantiate(viewModel: PeopleListViewModel, DIProtocol: PeopleListDIContainerProtocol) -> PeopleListViewController {
-        let storyboard = UIStoryboard(name: "PeopleListViewController", bundle: nil)
-        let view = storyboard.instantiateViewController(withIdentifier: "PeopleListViewController") as! PeopleListViewController
+        let storyboard = UIStoryboard.instantiate(name: .peopleList, bundle: nil)
+        let view = storyboard.instantiateViewController(withIdentifier: PeopleListViewController.storyboardIdentifier) as! PeopleListViewController
         view.viewModel = viewModel
         view._DIProtocol = DIProtocol
         return view
